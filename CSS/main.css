@@ -75,16 +75,26 @@ header {
 }
 
 header img {
+    position: relative;
+    left: -8%;
     max-height: 10%;
     max-width: 10%;
     z-index: 1;
 }
 
+@media (max-width: 1400px) {
+    header img {
+        position: relative;
+        left: 0%;
+        max-width: 15%;
+    }
+}
+
 @media (max-width: 600px) {
     header img {
         position: relative;
-        left: 1%;
-        max-width: 15%;
+        left: 3%;
+        max-width: 25%;
     }
 }
 
@@ -117,7 +127,7 @@ nav ul {
 }
 
 nav .toggle-menu {
-    font-size: 22px;
+    font-size: 29px;
     cursor: pointer;
 }
 
@@ -174,7 +184,7 @@ nav ul li a:hover::after {
         justify-content: center;
         top: 100%;
         right: 90%;
-        width: 500%;
+        width: 400%;
         height: 18vh;
         background-color: rgb(0 0 0 / 70%);
         border-radius: 10%;
@@ -195,7 +205,7 @@ nav ul li a:hover::after {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 600px) and (max-height: 736px) {
     nav ul {
         display: none;
     }
@@ -208,11 +218,32 @@ nav ul li a:hover::after {
         justify-content: center;
         top: 100%;
         right: 90%;
-        width: 500%;
-        height: 18vh;
+        width: 400%;
+        height: 20vh;
         background-color: rgb(0 0 0 / 70%);
         border-radius: 10%;
-        gap: 4%;
+        gap: 8%;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 640px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .toggle-menu:hover+ul,
+    nav ul:hover{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 100%;
+        right: 90%;
+        width: 400%;
+        height: 22vh;
+        background-color: rgb(0 0 0 / 70%);
+        border-radius: 10%;
+        gap: 6%;
     }
 }
 
@@ -420,7 +451,7 @@ footer {
     justify-content: center;
     padding: 20px;
     background-color: white;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #work .project .caption a {
@@ -440,7 +471,7 @@ footer {
 }
 
 .aboutCon #aboutImg {
-    width: 65%;
+    width: 55%;
     border-radius: 0;
     order: 0;
 }
