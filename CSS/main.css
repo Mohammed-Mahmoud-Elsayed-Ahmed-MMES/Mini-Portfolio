@@ -77,7 +77,7 @@ header {
 header img {
     position: relative;
     left: -8%;
-    max-height: 10%;
+    /* max-height: 10%; */ /* Commented this line to be displayed correctly on iPhone */
     max-width: 10%;
     z-index: 1;
 }
