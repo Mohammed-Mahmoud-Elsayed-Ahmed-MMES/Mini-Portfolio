@@ -394,7 +394,7 @@ nav ul li a:hover::after {
     border-color: transparent;
 }
 
-.fab.fa-facebook-f,
+.fa-brands.fa-github,
 .fa-brands.fa-linkedin {
     color: #242424;
     font-size: 1.7em;
