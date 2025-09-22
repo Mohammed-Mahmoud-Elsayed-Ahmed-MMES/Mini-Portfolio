@@ -335,7 +335,7 @@ nav ul li a:hover::after {
 
 @media (max-width: 600px) {
     .container img {
-        width: fit-content;
+        width: inherit;
         order: 0; /* # Unchanged; preserves mobile image order. */
     }
 }
@@ -808,3 +808,4 @@ footer {
 }
 
 /* End Contact */
+
