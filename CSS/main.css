@@ -335,7 +335,7 @@ nav ul li a:hover::after {
 
 @media (max-width: 600px) {
     .container img {
-        width: inherit;
+        width: fit-content;
         order: 0; /* # Unchanged; preserves mobile image order. */
     }
 }
@@ -366,6 +366,7 @@ nav ul li a:hover::after {
 
 @media (max-width: 600px) {
     .information #one {
+        font-size: xx-large;
         margin-bottom: 2%; /* # Unchanged; preserves mobile text spacing. */
     }
 }
