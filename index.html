@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 <body>
     <div class="preloader">
         <div class="one"></div>
@@ -40,18 +41,18 @@
         <div class="container">
             <div class="information staggered-content">
                 <p id="one">
-                    Hello, I am <span>Mohamed</span>.
-                    A Computer Science student at Zagazig University.
+                    Hello, I am <span>Mohamed Mahmoud</span>.
+                    A recent Computer Science graduate from Zagazig University.
                 </p>
-                <p id="two">I am passionate about AI, Machine Learning, and Front-End and love to experience
+                <p id="two">I am passionate about AI, Machine Learning, Data Science, Data Analysis, and Web Development. I love to experience
                     new things.</p>
                 <div>
                     <button class="contactButton">Contact Me</button>
                     <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mohamed-mahmoud-5698a9280/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-mahmoud-elsayed" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <img src="Images/Clipped_image_20231109_230935.png" alt="">
+            <img src="Images/Mohamed.jpg" alt="">
         </div>
     </div>
     <!-- End Home -->
@@ -59,52 +60,243 @@
     <!-- Start Work -->
     <div id="work" class="display on">
         <h1>WORK</h1>
-        <div class="project staggered-content">
-            <div class="pro1">
-                <img src="Images/Ramadan.jpg" title="Ramadan Website">
-                <div class="caption">
-                    <a href="https://ramdaan-kareem.netlify.app/" target="_blank">Ramadan</a>
+        <div class="tab-bar">
+            <button class="tab active" data-track="ai">AI</button>
+            <!-- <button class="tab" data-track="machine-learning">Machine Learning</button> -->
+            <button class="tab" data-track="data-science">Data Science</button>
+            <button class="tab" data-track="data-analysis">Data Analysis</button>
+            <!-- <button class="tab" data-track="networking">Networking</button> -->
+            <button class="tab" data-track="web-development">Web Development</button>
+        </div>
+
+        <!-- AI -->
+        <div class="tab-content" id="ai">
+            <div class="project staggered-content">
+                <div class="pro">
+                    <img class="image-icon" src="Images/face-scanner.png" alt="">
+                    <div class="caption">
+                        <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES/Facial-Expression-Recognition-Project" target="_blank">Facial Expression Recognition</a>
+                        <p>EduVision project using Vision Transformer to monitor student emotions. Achieved 95.01% accuracy. Tech: Python, PyTorch, Transformers, OpenCV, Scikit-learn.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-hand" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES/Hand-Gesture-Recognition-for-Student-Engagement" target="_blank">Hand Gesture Recognition</a>
+                        <p>EduVision project monitoring student engagement via hand gestures using MediaPipe and ResNet50 CNN. Achieved 96.93% test accuracy. Tech: Python, MediaPipe, PyTorch, OpenCV, Scikit-learn, Matplotlib, Seaborn, NumPy.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES/Jute_Pest" target="_blank">PestVision</a>
+                        <p>Computer vision model to classify 17 jute pest types with 98% accuracy using a super ensemble of custom CNN and ResNet18. Deployed via Flask on PythonAnywhere. Tech: Python, Flask, PyTorch, CUDA, TensorBoard.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-mountain-city" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/intel-image-classification-from-scratch-pytorch" target="_blank">Intel Image Classification from Scratch (PyTorch)</a>
+                        <p>Computer vision model to classify  with 98% accuracy using a custom CNN. Deployed via Flask on PythonAnywhere. Tech: Python, Flask, PyTorch, CUDA, TensorBoard.</p>
+                    </div>
                 </div>
             </div>
-            <div class="pro2">
-                <img src="Images/Leon.jpg" title="Leon Website">
-                <div class="caption">
-                    <a href="https://leon-mo.netlify.app/" target="_blank">Leon</a>
+        </div>
+        </div> -->
+
+        <!-- Data Science -->
+        <div class="tab-content" id="data-science" style="display: none;">
+            <div class="project staggered-content">
+                <div class="pro">
+                    <i class="fa-solid fa-car" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/car-price-prediction-with-linear-regression" target="_blank">Car Price Prediction with Linear Regression</a>
+                        <p>Explore a detailed analysis of a car price dataset, featuring key attributes like manufacturer, model, production year, fuel type, and more. This notebook applies linear regression to predict car prices, with MinMax scaling, train-test split, and performance metrics (MAE: 0.0005, RMSE: 0.0007). Visualizations compare actual vs. predicted prices, offering insights for automotive market trends and pricing strategies.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/heart-2022-with-nans-and-decisiontree" target="_blank">Heart 2022 with NaNs and DecisionTree</a>
+                        <p>Explore a detailed analysis of a health dataset, capturing attributes like general health, chronic conditions, and lifestyle factors. This notebook predicts heart attack risk using a decision tree classifier, with MinMax scaling, SMOTE-Tomek for imbalance handling, and robust preprocessing (missing values, outliers). Visualizations (e.g., confusion matrix, feature distributions) and clear notes provide insights into health trends and risk factors (Accuracy: 0.9133).</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-apple-whole" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/apple-quality-logistic-regression-random-forest" target="_blank">Apple Quality - Logistic Regression & Random Forest</a>
+                        <p>Explore a detailed analysis of a fruit quality dataset, featuring attributes like size, weight, sweetness, and ripeness. This notebook predicts fruit quality (good/bad) using logistic regression and random forest models, with MinMax scaling, SMOTE for imbalance handling, and robust preprocessing (missing values, outliers). Visualizations (e.g., confusion matrix, ROC curves) and clear notes provide insights into fruit quality trends (Random Forest Accuracy: 0.8750, AUC: 0.9460).</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-regular fa-hospital" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/sleep-health-and-lifestyle-eda-using-2-labels" target="_blank">Sleep Health and Lifestyle EDA using 2 Labels</a>
+                        <p>Explore a comprehensive analysis of a sleep health dataset, featuring metrics like sleep duration, quality, stress levels, and lifestyle factors. This notebook predicts sleep disorders (Random Forest Accuracy: 0.88) and stress levels (Gradient Boosting R²: 0.9978) using multiple models, with robust preprocessing (missing values, outliers, SMOTE). Detailed visualizations (e.g., confusion matrices, scatter plots) and notes provide insights into sleep patterns and health trends.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img class="image-icon" src="Images/fraud.png" alt="">
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/synthetic-fraud-classification-model-fraud-label" target="_blank">Synthetic Fraud Classification Model - Fraud Label</a>
+                        <p>Explore a robust analysis of a synthetic financial transaction dataset for fraud detection, featuring attributes like transaction amount, type, and risk score. This notebook uses XGBoost to predict fraud (Accuracy: 0.9422 with Risk_Score, 0.8279 without(to address potential data leakage)), with StandardScaler, SMOTE for imbalance handling, and thorough preprocessing (missing values, outliers). Visualizations (e.g., confusion matrices, feature importance) and detailed notes offer insights into fraud patterns and model performance.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-meteor" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/asteroid-regression-model-moid-column" target="_blank">Asteroid Regression Model - MOID Column</a>
+                        <p>Explore a detailed analysis of an asteroid dataset, featuring orbital and physical properties like diameter, albedo, and eccentricity. This notebook predicts the Earth Minimum Orbit Intersection Distance (MOID) using XGBoost regression (R²: 0.9950, MAE: 0.0091), with robust preprocessing (missing values, outliers, scaling). Visualizations (e.g., scatter plots, feature importance) and clear notes provide insights into asteroid orbit characteristics and potential Earth proximity risks.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-meteor" style="color: #5b0707;" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/using-regression-diameter-classification-pha" target="_blank">Using Regression for Diameter Classification - PHA</a>
+                        <p>Explore a comprehensive analysis of a NASA JPL asteroid dataset with 245,900 entries, detailing size, brightness, and orbital properties. This notebook predicts asteroid diameter using multiple regression models (Random Forest R²: 0.9729) and classifies Potentially Hazardous Asteroids (PHA) with high accuracy (XGBoost F1: 0.9699). Robust preprocessing (missing values, outliers, SMOTE), visualizations (e.g., confusion matrices, scatter plots), and clear notes provide insights into asteroid characteristics and risks.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-mobile" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/phone-classification-acc-0-965" target="_blank">Phone Classification - Acc 0.965</a>
+                        <p>Explore a detailed analysis of a mobile phone dataset, featuring specs like battery power, RAM, and camera resolution. This notebook predicts price ranges (low to very high) using multiple classifiers, with Logistic Regression achieving the highest accuracy (0.965). Robust preprocessing (missing values, outliers, StandardScaler, log transformation), visualizations (e.g., confusion matrices, feature importance), and clear notes provide insights into factors driving phone pricing.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/indicators-of-heart-disease-with-nans" target="_blank">Indicators of Heart Disease with NaNs</a>
+                        <p>Explore a comprehensive analysis of the 2022 CDC BRFSS heart disease dataset, covering 400,000+ U.S. adults. This notebook predicts heart attack risk (HadHeartAttack) using multiple classifiers, with XGBoost achieving strong performance (F1: 0.4407, ROC-AUC: 0.8782). Robust preprocessing (missing values, outliers, SMOTE for class imbalance), visualizations (e.g., confusion matrices, feature importance), and detailed notes provide insights into key risk factors like age, BMI, and smoking.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="two-images">
+                        <img class="image-icon" src="Images/adidas.png" alt="">
+                        <img class="image-icon" src="Images/nike.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/adidas-vs-nike" target="_blank">Adidas vs Nike</a>
+                        <p>Explore a detailed analysis of a large Adidas product dataset, featuring footwear details like pricing, discounts, ratings, and reviews. This notebook applies K-means and Hierarchical Clustering to group products based on key features (optimal k=2, Silhouette Score: 0.313). Robust preprocessing (missing values, outliers, StandardScaler), visualizations (e.g., dendrograms, 2D/3D scatter plots), and clear notes provide insights into product segmentation and competitive analysis.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/adult-income-dataset" target="_blank">Adult Income Dataset</a>
+                        <p>Explore a detailed analysis of the U.S. Census Bureau's Adult dataset, predicting whether individuals earn over $50K annually based on demographics and employment data. This notebook employs multiple classifiers, with XGBoost achieving the highest performance (F1: 0.7137, ROC-AUC: 0.9172). Robust preprocessing (missing values, categorical encoding, SMOTE for class imbalance), visualizations (e.g., confusion matrices, feature importance), and clear notes provide insights into income predictors and fairness considerations.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa fa-chart-bar" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/credit-card-fraud-pca-t-sna" target="_blank">Credit Card Fraud - PCA & T-SNE</a>
+                        <p>Explore a robust analysis of a credit card transaction dataset, designed to detect fraudulent activities amidst millions of daily transactions. This notebook leverages Random Forest, XGBoost, and KNN classifiers, with Random Forest achieving strong performance (F1: 0.7972, ROC-AUC: 0.9901). Comprehensive preprocessing (missing values, outliers, SMOTE for class imbalance, PCA/t-SNE for dimensionality reduction), visualizations (e.g., confusion matrices, PCA/t-SNE scatter plots), and clear notes provide insights into fraud patterns and model effectiveness.</p>
+                    </div>
                 </div>
             </div>
-            <div class="pro3">
-                <img src="Images/prayer.jpg" title="Prayers Website">
-                <div class="caption">
-                    <a href="https://prayers-for-you.netlify.app/" target="_blank">Prayers</a>
-                </div></div>
-            <div class="pro4">
-                <img src="Images/login.png" title="Beautiful LogIn Website">
-                <div class="caption">
-                    <a href="https://mohammed-mahmoud-elsayed-ahmed-mmes.github.io/Awesome_Login/" target="_blank">LogIn</a>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="tab-content" id="data-analysis" style="display: none;">
+            <div class="project staggered-content">
+                <div class="pro">
+                    <i class="fa-solid fa-cash-register" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES/Graduation-Project-Part-2-MLSC-Data-Science-Machine-Learning-Course" target="_blank">E-commerce Customers Segmentation</a>
+                        <p>This project involves analyzing and segmenting customers in an e-commerce environment using data from five interrelated tables. The goal is to understand customer behaviors, transactions, and merchant activity to create meaningful customer segments..</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES/Mid-Course-project-MLSC-Data-Science-Machine-Learning-Course" target="_blank">Used Cars</a>
+                        <p>This project analyzes a dataset of car listings to predict whether a vehicle is in hazardous condition based on various features. The dataset contains over 426,000 records. The project involves data preprocessing, exploratory data analysis (EDA), and model building using machine learning to predict a specified target variable.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-bed" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://github.com/Mohammed-Mahmoud-Elsayed-Ahmed-MMES/GCamp_Final_Project" target="_blank">Sleep Health and Lifestyle Dataset</a>
+                        <p>The Sleep Health and Lifestyle Dataset comprises 374 entries detailing sleep and lifestyle factors of individuals. It includes demographic information, sleep metrics, physical activity levels, stress levels, and health indicators such as BMI, blood pressure, heart rate, daily steps, and the presence or absence of sleep disorders (e.g., Insomnia, Sleep Apnea). This dataset is designed to facilitate exploration of the relationships between lifestyle factors and sleep health, as well as to identify patterns associated with sleep disorders.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://www.kaggle.com/code/mahamedmahmoud/shopping-trends-analysis-eda" target="_blank">Shopping Trends Analysis - EDA</a>
+                        <p>Explore a comprehensive analysis of a shopping trends dataset, uncovering customer purchasing trends through visualizations and insights. Dive into patterns across age, gender, items, categories, seasons, and more, with answers to 35 key questions. Perfect for understanding customer behavior, optimizing inventory, and enhancing marketing strategies..</p>
+                    </div>
                 </div>
             </div>
-            <div class="pro5">
-                <img src="Images/Kasper.jpg" title="Modified Kasper Website">
-                <div class="caption">
-                    <a href="Work Pages/First Project/index2.html" target="_blank">Kasper</a>
+        </div>
+        <!-- Web Development -->
+        <div class="tab-content" id="web-development" style="display: none;">
+            <div class="project staggered-content">
+                <div class="pro">
+                    <img class="image-icon" src="Images/ramadan.png " alt="">
+                    <div class="caption">
+                        <a href="https://ramdaan-kareem.netlify.app/" target="_blank">Ramadan</a>
+                        <p>Responsive website built with HTML, CSS, and JavaScript for Ramadan-themed content.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="pro6">
-                <img src="Images/Forgivness.jpg" title="Forgivness Counter Website">
-                <div class="caption">
-                    <a href="https://counterofforgiveness.netlify.app/" target="_blank">Forgivness</a>
+                <div class="pro">
+                    <i class="fa-solid fa-building" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://leon-mo.netlify.app/" target="_blank">Leon</a>
+                        <p>Modern landing page designed with HTML, CSS, and JavaScript.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="pro7">
-                <img src="Images/result&summary.png" title="Result-summary front-end mentor Website">
-                <div class="caption">
-                    <a href="https://mohammed-mahmoud-elsayed-ahmed-mmes.github.io/Results-Summary/" target="_blank">Result-Summary</a>
+                <div class="pro">
+                    <img class="image-icon" src="Images/dua-hands.png" alt="">
+                    <!-- <i class="fa fa-code" aria-hidden="true"></i> -->
+                    <div class="caption">
+                        <a href="https://prayers-for-you.netlify.app/" target="_blank">Prayers</a>
+                        <p>Discover a collection of authentic Islamic supplications (dua) for daily life, sourced from the Quran and Sunnah. Simple, accessible, and heartfelt prayers to strengthen your faith and connection with Allah. using HTML, CSS, and JavaScript.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="pro8">
-                <img src="Images/multi-steps.png" title="multi-step-form-main front-end mentor Website">
-                <div class="caption">
-                    <a href="https://multi-step-form-main-mo.netlify.app/" target="_blank">Multi-Step-Form-Main</a>
+                <div class="pro">
+                    <img class="image-icon" src="Images/user.png" alt="">
+                    <div class="caption">
+                        <a href="https://mohammed-mahmoud-elsayed-ahmed-mmes.github.io/Awesome_Login/" target="_blank">LogIn</a>
+                        <p>Stylish login page with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <!-- <img class="image-icon" src="Images/kasper.png" alt=""> -->
+                    <i class="fa-solid fa-ghost" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="Work Pages/First Project/index2.html" target="_blank">Kasper</a>
+                        <p>Customized landing page with enhanced UI using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img class="image-icon" src="Images/tasbih.png" alt="">
+                    <div class="caption">
+                        <a href="https://counterofforgiveness.netlify.app/" target="_blank">Forgivness</a>
+                        <p>Experience a digital tasbeeh counter for effortless dhikr. Track recitations of Allahu Akbar, Alhamdulillah, Subhanallah, and more with a single tap. Set goals, save progress, and stay mindful—your personal companion for spiritual growth, built with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img class="image-icon" src="Images/mission.png" alt="">
+                    <div class="caption">
+                        <a href="https://mohammed-mahmoud-elsayed-ahmed-mmes.github.io/Results-Summary/" target="_blank">Result-Summary</a>
+                        <p>Frontend Mentor challenge for result visualization using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="https://multi-step-form-main-mo.netlify.app/" target="_blank">Multi-Step-Form-Main</a>
+                        <p>Multi-step form with responsive design, built with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                    <div class="caption">
+                        <a href="#" target="_blank">To-Do List Web App</a>
+                        <p>Django-based to-do list with CRUD functionality, REST API, and responsive UI/UX. Tech: Python, Django, Django REST Framework, HTML, CSS, JavaScript, Docker, SQLite.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,14 +306,39 @@
     <!-- Start About -->
     <div id="about" class="display on">
         <div class="container aboutCon staggered-content">
-            <img src="Images/1.png" alt="" id="aboutImg">
-            <div class="information aboutInfo">
+            <img src="Images/A.png" alt="About Image" id="aboutImg">
+            <div class="information aboutInfo timeline">
                 <p id="one">
-                    Hello, I am <span>Mohamed</span>.
+                    Hello, I am <span>Mohamed Mahmoud</span>.
                     I am available for assignments.
                 </p>
-                <p id="two">I am a computer science student with a strong interest in front-end development, artificial intelligence, and machine learning. Through my personal projects and coursework, I have developed a solid understanding of networking technologies and continue to explore various tech fields to find my niche.</p>
-                <button class="contactButton">Say Hello</button>
+                <p id="two">Recent Computer Science graduate from Zagazig University (GPA: 3.77) with hands-on experience:</p>
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <p>Currently working as a Teaching Assistant at Salahaia Gadeda University, Faculty of Computers and Information, where I support students in computer science courses, and lead tutorials.</p> <!-- contribute to curriculum development in AI and data science topics. --> 
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <p>Member of the GDG Data Science Core Team, where I contributed to community projects, organized workshops, and supported data science initiatives to foster learning and collaboration.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <p>Led the EduVision graduation project, managing a team to develop a system for monitoring student engagement via hand gestures and facial expressions, achieving 96.93% and 95.01% accuracies using Python, PyTorch, MediaPipe, and OpenCV, earning full marks.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <p>Trained in data science and machine learning with Microsoft Student Club, ranking in the top tier and receiving a LinkedIn Premium voucher for my performance in advanced ML projects.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <p>Interned at Orange Egypt, where I collaborated with various teams. Developed a Django-based to-do list application with full CRUD functionality, REST API integration, and responsive UI/UX, containerized using Docker for scalable deployment.</p>
+                </div>
+                <div class="button-group">
+                    <button class="contactButton">Say Hello</button>
+                    <a href="https://flowcv.com/resume/wevef8qjwr" target="_blank" >
+                        <button class="cv-Button">Show CV</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -139,7 +356,7 @@
                 </div>
                 <div class="info">
                     <h4>Phone</h4>
-                    <p>+02 0155 102 0018</p>
+                    <p>+02 155 102 0018</p>
                 </div>
                 <div class="info">
                     <h4>E-Mail</h4>
@@ -147,25 +364,26 @@
                 </div>
             </div>
             <div class="inputInfo">
-                <form action="">
+                <form id="contact-form">
                     <label for="name">Name *</label>
                     <div class="name">
-                        <input type="text" class="main-input" name="name" placeholder="First Name" required>
-                        <input type="text" class="main-input" name="name" placeholder="Last Name" required>
+                        <input type="text" class="main-input" name="first-name" placeholder="First Name" required>
+                        <input type="text" class="main-input" name="last-name" placeholder="Last Name" required>
                     </div>
                     <br>
                     <label for="email">Email *</label>
                     <input type="email" class="main-input" name="email" required>
                     <br>
                     <label for="textarea">Message</label>
-                    <textarea name="textarea" class="main-input" id="textarea"></textarea>
+                    <textarea name="message" class="main-input" id="textarea"></textarea>
                     <input type="submit" class="submitBtn" value="Submit">
                 </form>
+                <p id="form-message" style="display: none;"></p> 
             </div>
         </div>
     </div>
     <!-- End Contact -->
-    <footer>&copy;2023 <span>Portfolio</span> All Right Reserved.</footer>
+    <footer>&copy;2025 <span>Portfolio</span> All Right Reserved.</footer>
     <script src="js/master.js"></script>
 </body>
 </html>
